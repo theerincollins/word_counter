@@ -21,7 +21,11 @@ describe('String#word_times') do
 
   it('returns a string with error message if no text was entered for the test
   word') do
-    expect("free lunch for left handed folks".word_times("")).to(eq("Hey! You forgot to enter a value!"))
+    expect("free lunch for left handed folks".word_times("")).to(eq("no value"))
   end
+
+  it('returns a descriptive string if user entered more than one test word') do
+  expect("free lunch for left handed folks".word_times("tick tock")).to(eq("multiple words"))
+end
 
 end

@@ -3,7 +3,8 @@ class String
     frequency = 0
     #Test that test_word is only one word.
     if test_word.include?(" ")
-      "Sorry, we're only looking for one word to test. Try again"
+      "multiple words"
+
     #Test to make sure user entered a word to count and a string in which
     #to find the word.
     elsif (test_word != "" && self != "")
@@ -26,8 +27,10 @@ class String
         end
       end
       frequency
+
     else
-      "Hey! You forgot to enter a value!"
+      #returns no value if user did not input one of the fields
+      "no value"
     end
   end
 end

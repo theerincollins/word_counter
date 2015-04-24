@@ -1,12 +1,12 @@
 <div class="text-center">
   <h1 class="heads">These Are Your Results</h1>
 
-<% if @result == "Sorry, we're only looking for one word to test. Try again" %>
+<% if @result == "multiple words" %>
   <p class="label-text">Sorry, we're only looking for one word to test. Try again.</p>
   <form action='/'>
     <button class="btn btn-danger" type="submit">Go Back!!</button>
   </form>
-<% elsif @result == "Hey! You forgot to enter a value!" %>
+<% elsif @result == "no value" %>
   <p class="label-text">Hey! You forgot to enter a value!</p>
   <form action='/'>
     <button class="btn btn-danger" type="submit">Go Back!!</button>

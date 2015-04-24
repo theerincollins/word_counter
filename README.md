@@ -8,11 +8,13 @@ with information pertaining to the frequency of the test word in the input phras
 Author: Erin Collins
 Date: April 24, 2015
 
-NOTE TO TEACHER- I'm unsure what I should be using as my setup instructions for
-this README.md file.
 
 Link to Heroku:
 https://erin-word-counter.herokuapp.com/
+
+Setup Instructions:
+-- Download all files
+-- Run bundle install
 
 
 The MIT License
