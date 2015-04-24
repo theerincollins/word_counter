@@ -21,8 +21,7 @@ describe('String#word_times') do
 
   it('returns a string with error message if no text was entered for the test
   word') do
-    expect("free lunch for left handed folks".word_times("")).to(eq("Hey!
-    You didn't enter any words to count."))
+    expect("free lunch for left handed folks".word_times("")).to(eq("Hey! You forgot to enter a value!"))
   end
 
 end
