@@ -1,0 +1,14 @@
+.heads {
+  color: purple;
+}
+
+.label-text {
+  font-size: 25px;
+}
+
+.btn {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
