@@ -8,4 +8,8 @@ describe('String#word_times') do
     expect("dog".word_times("dog")).to(eq(1))
   end
 
+  it('returns a Fixnum value equal to the frequeny of a word in a given string of multiple words only') do
+    expect("this dog that dog red dog small dog".word_times("dog")).to(eq(4))
+  end
+
 end
