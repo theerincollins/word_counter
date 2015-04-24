@@ -5,6 +5,11 @@ Using Ruby this method returns how frequently a word appears in a given string.
 User inputs a test word and a phrase of words. The method will output text
 with information pertaining to the frequency of the test word in the input phrase.
 
+The method removes any non letters from both strings and makes them lowercase.
+Then the method splits the input phrase into an array and compares each word to
+the test word. If any of the words in the input phrase are equal to the test
+word, the frequency value increases by 1.
+
 Author: Erin Collins
 Date: April 24, 2015
 
@@ -15,6 +20,8 @@ https://erin-word-counter.herokuapp.com/
 Setup Instructions:
 -- Download all files
 -- Run bundle install
+-- Run Ruby app.rb
+-- Enter localhost:4567 into address bar
 
 
 The MIT License
