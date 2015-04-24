@@ -8,9 +8,11 @@ with information pertaining to the frequency of the test word in the input phras
 Author: Erin Collins
 Date: April 24, 2015
 
-Goals
+NOTE TO TEACHER- I'm unsure what I should be using as my setup instructions for
+this README.md file.
 
--- Project README includes: author name, program name, description, setup instructions, copyright and license information
+Link to Heroku:
+https://erin-word-counter.herokuapp.com/
 
 
 The MIT License

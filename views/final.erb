@@ -8,6 +8,9 @@
   </form>
 <% elsif @result == "Hey! You forgot to enter a value!" %>
   <p class="label-text">Hey! You forgot to enter a value!</p>
+  <form action='/'>
+    <button class="btn btn-danger" type="submit">Go Back!!</button>
+  </form>
 <% elsif @result == 0 %>
   <p class="label-text">Hmmm... It looks like the word <font color="green"><%= @test_word %></font> does not shows up in the phrase <font color="orange"><%= @input_string %></font>
   </p>
