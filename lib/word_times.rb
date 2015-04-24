@@ -1,10 +1,13 @@
 class String
-  def word_times(test_string)
+  def word_times(test_word)
     frequency = 0
-    if self == test_string
-      frequency = frequency + 1
+    input_words = self.split(" ")
+    input_words.each do |word|
+      if word == test_word
+        frequency = frequency + 1
+      end
     end
-
+    frequency
 
   end
 end
