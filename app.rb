@@ -8,6 +8,8 @@ get ('/') do
 end
 
 get ('/final') do
-  @result = params.fetch("input_string").word_times(params.fetch("test_word"))
+  @input_string = params.fetch("input_string")
+  @test_word = params.fetch("test_word")
+  @result = @input_string.word_times(@test_word)
   erb(:final)
 end
