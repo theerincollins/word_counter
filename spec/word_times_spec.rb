@@ -19,4 +19,10 @@ describe('String#word_times') do
     expect("this dog, that dog".word_times("dog")).to(eq(2))
   end
 
+  it('returns a string with error message if no text was entered for the test
+  word') do
+    expect("free lunch for left handed folks".word_times("")).to(eq("Hey!
+    You didn't enter any words to count."))
+  end
+
 end
