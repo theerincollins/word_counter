@@ -1,6 +1,18 @@
 <div class="text-center">
   <h1 class="heads">These Are Your Results</h1>
 
-
-  <p class="label-text"><%= @result %></p>
+<% if @result == "Sorry, we're only looking for one word to test. Try again" %>
+  <p class="label-text">Sorry, we're only looking for one word to test. Try again.</p>
+  <form action='/'>
+    <button class="btn btn-danger" type="submit">Go Back!!</button>
+  </form>
+<% elsif @result == "Hey! You forgot to enter a value!" %>
+  <p class="label-text">Hey! You forgot to enter a value!</p>
+<% elsif @result == 0 %>
+  <p class="label-text">Hmmm... It looks like the word <font color="green"><%= @test_word %></font> does not shows up in the phrase <font color="orange"><%= @input_string %></font>
+  </p>
+<% else @result != 0 %>
+  <p class="label-text">The word <font color="green"><%= @test_word %></font> shows up <%= @result %> times in the phrase <font color="orange"><%= @input_string %></font>
+  </p>
+<% end %>
 </div>

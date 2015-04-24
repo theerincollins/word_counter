@@ -11,7 +11,11 @@ class String
       #gsub will remove any non-letters from either text string, downcase will
       #make all letters the same case then split will turn the string into an
       #array of words
-      input_words = self.gsub(/[^a-z\s]/, "").downcase().split(" ")
+
+      #COMMENT TO INSTRUCTOR - I am unsure what the i does in this line of code
+      #/[^a-z\s]/i. When i do not have the i, the function deletes the whole word
+      #for example CRANE!.gsub(/[^a-z\s]/i, "") = ""
+      input_words = self.gsub(/[^a-z\s]/i, "").downcase().split(" ")
       test_word.gsub!(/[^a-z\s]/, "")
       test_word = test_word.downcase()
 
@@ -21,7 +25,7 @@ class String
           frequency = frequency + 1
         end
       end
-      "The word #{test_word} shows up #{frequency} times in the phrase #{self}."
+      frequency
     else
       "Hey! You forgot to enter a value!"
     end

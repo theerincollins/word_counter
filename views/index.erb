@@ -1,24 +1,26 @@
-<h1 class="heads text-center">Let's Do a Word Count Y'all!<h1>
+<div class="text-center">
+  <h1 class="heads">Let's Do a Word Count Y'all!<h1>
 
-<form action='/final'>
-  <div class="form-group row">
+  <form action='/final'>
+    <div class="form-group row">
 
-    <div class="col-sm-6">
-      <label for="test_word" class="label-text">Enter Your Word<br></label>
-      <input type="text" id="test_word" name="test_word" placeholder="ex: dog"
-        class="form-control">
+      <div class="col-sm-6">
+        <label for="test_word" class="label-text">Enter Your Word<br></label>
+        <input type="text" id="test_word" name="test_word" placeholder="ex: dog"
+          class="form-control">
+      </div>
+
+      <div class="col-sm-6">
+        <label for="input_string" class="label-text">
+          Enter A Phrase Containing Your Word
+        </label>
+        <input type="text" id="input_string" name="input_string"
+        placeholder="ex: It's a dog eat dog world" class="form-control">
+      </div>
+
     </div>
 
-    <div class="col-sm-6">
-      <label for="input_string" class="label-text">
-        Enter A Phrase Containing Your Word
-      </label>
-      <input type="text" id="input_string" name="input_string"
-      placeholder="ex: It's a dog eat dog world" class="form-control">
-    </div>
+    <button class="btn btn-success" type="submit">Count!</button>
 
-  </div>
-
-  <button class="btn btn-success" type="submit">Count!</button>
-
-</form>
+  </form>
+</div>
