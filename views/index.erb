@@ -1,10 +1,19 @@
 <h1>Let's do a word count y'all!<h1>
 
-<form action='/'>
+<form action='/final'>
   <div class="form-group">
-    <label for="test_word">Enter the word you want to count<label>
-      <input type="text" id="test_word" name="test_word" placeholder="ex: dog"
+
+    <label for="test_word">Enter the word you want to count</label>
+    <input type="text" id="test_word" name="test_word" placeholder="ex: dog"
       class="form-control">
+
+    <label for="input_string">
+      Enter your text string containing the word above
+    </label>
+    <input type="text" id="input_string" name="input_string"
+    placeholder="ex: It's a dog eat dog world" class="form-control">
   </div>
+
+  <button class="btn-success" type="submit">Count!</button>
 
 </form>
